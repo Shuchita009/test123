@@ -50,7 +50,7 @@ set "$appendDateTimeInCycleName=false"
 set "$folderName=Windows"
 set "$createNewFolder=true"
 set "$appendDateTimeInFolderName=true"
-set "$assigneeUser=557058:XXXXXXXX-XXXX-XXXX-XXXX-da60ef125371"
+set "$assigneeUser=5fc727d5f8b0120069ecbaf3"
 
 :: Fully-qualitified name of the test result file
 set "$resultPath=@\"C:/Users/spare/.jenkins/workspace/JavaFreeStyleGoogle/target/cucumber-reports/json-reports/CucumberTestReport.json""
