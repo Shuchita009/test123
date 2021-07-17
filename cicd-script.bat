@@ -38,11 +38,11 @@ echo %$finaljwt%
 set "$taskName=My task"
 set "$taskDescription=Task description"
 set "$automationFramework=Cucumber"
-set "$projectKey=PROJ"
-set "$versionName=Unscheduled"
+set "$projectKey=Range"
+set "$versionName=UNSCHEDULED"
 
 :: Cycle info
-set "$cycleName=CICD Automation"
+set "$cycleName=sample"
 set "$createNewCycle=true"
 set "$appendDateTimeInCycleName=false"
 
