@@ -54,7 +54,7 @@ set "$assigneeUser=557058:XXXXXXXX-XXXX-XXXX-XXXX-da60ef125371"
 
 :: Fully-qualitified name of the test result file
 #set "$resultPath=@\"C:/Test results/junit.xml\"
-set "$resultPath=@\"C:/Users/spare/.jenkins/workspace/JavaFreeStyleGoogle/target/cucumber-reports/json-reports/CucumberTestReport.json"
+set "$resultPath=@\C:/Users/spare/.jenkins/workspace/JavaFreeStyleGoogle/target/cucumber-reports/json-reports/CucumberTestReport.json"
 
 :: =========================================
 ::  Create an automation task, run it, send test results to Zephyr.
