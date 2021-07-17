@@ -1,0 +1,80 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 881822200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchSteps.setupDriver()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "I want to goto Google",
+        "description": "",
+        "id": "range-url;i-want-to-goto-google",
+        "after": [
+          {
+            "result": {
+              "duration": 60666300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchSteps.quitDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1732134100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on the website",
+            "match": {
+              "location": "SearchSteps.i_am_on_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31237400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should get title as \"Google\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Google",
+                  "offset": 23
+                }
+              ],
+              "location": "SearchSteps.i_should_get_title_as_Google(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Range Url",
+    "description": "",
+    "id": "range-url",
+    "keyword": "Feature",
+    "uri": "features/search.feature"
+  }
+]

@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  hub:
+    image: selenium/hub
+    container_name: selenium-hub
+    ports:
+      - "4444:4444"
+
+  chrome:
+    image: selenium/node-chrome
+    depends_on:
+      - hub
+    environment:
+      - HUB_HOST=hub
+
+  bdd:
+    image: googletestimage5
+    depends_on:
+      - chrome
+    environment:
+      - HUB_HOST=hub
+      - Browser=chrome
+      - CUCUMBER_OPTIONS=classpath:features
+    volumes:
+      - ./output:/usr/share/udemy/target/cucumber-reports 
+      
+      
+      
