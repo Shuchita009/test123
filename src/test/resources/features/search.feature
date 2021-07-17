@@ -1,6 +1,6 @@
 Feature: Range Url
 
-@smoke    
-    Scenario: I want to goto Google
+@smoke @RANGE-803
+    Scenario: Verify Google Page Title
     Given I am on the website
     Then  I should get title as "Google"
