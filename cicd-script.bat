@@ -39,7 +39,7 @@ set "$taskName=My task"
 set "$taskDescription=Task description"
 set "$automationFramework=Cucumber"
 set "$projectKey=RANGE"
-set "$versionName=UNSCHEDULED"
+set "$versionName=Unscheduled"
 
 :: Cycle info
 set "$cycleName=sample"
