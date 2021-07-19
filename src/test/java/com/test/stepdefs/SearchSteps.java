@@ -45,8 +45,8 @@ public class SearchSteps{
             options.addArguments("--start-maximized");
             options.addArguments("--headless");
             options.addArguments("--log-level=3");
-            options.AddArgument("--disable-crash-reporter");
-            options.AddArgument("--disable-extensions");
+            options.AddArguments("--disable-crash-reporter");
+            options.AddArguments("--disable-extensions");
         }
 
         if(System.getProperty("HUB_HOST") != null){
