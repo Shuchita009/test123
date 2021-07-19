@@ -43,6 +43,10 @@ public class SearchSteps{
         }else{
             options = new ChromeOptions();
             options.addArguments("--start-maximized");
+            options.addArguments("--headless");
+            options.addArguments("--log-level=3");
+            options.AddArgument("--disable-crash-reporter");
+            options.AddArgument("--disable-extensions");
         }
 
         if(System.getProperty("HUB_HOST") != null){
