@@ -15,10 +15,10 @@ set "$zephyrBaseUrl=https://prod-api.zephyr4jiracloud.com/connect"
 ::  Replace the constants below with values relevant to your project and account.
 :: =========================================
 :: The accessKey and secretKey to access your project. You can find them in your Jira project: Zephyr > API Keys.
-set "$accessKey=amlyYTpkOTIyOTEwYi0yMjJlLTQxNDYtOGVmNS05ZTdhYmRlMTliYWEgNWZjNzI3ZDVmOGIwMTIwMDY5ZWNiYWYzIFVTRVJfREVGQVVMVF9OQU1F"
-set "$secretKey=nCAKjdCSPSVDmNxqGHhYpq7s4FcwjRqaJ-f6dZu2i9c"
+set "$accessKey=ODhmNjZkNjQtZjM4NS0zYjM0LWI0OWYtMjU3ZTdlMjQyN2EzIDYwZjRmNDFiZjAyNmFiMDA3MDBhYjUyYyBVU0VSX0RFRkFVTFRfTkFNRQ"
+set "$secretKey=7-HKGkBijaA4yaMdW6bG40XRVC11FN1u5CiCNah46z4"
 :: Id of the user who will create the automation task. You can find it in Jira.
-set "$accountId=5fc727d5f8b0120069ecbaf3"
+set "$accountId=60f4f41bf026ab00700ab52c"
 
 :: =========================================
 ::  Create a JSON Web Token  (required to access Zephyr for Jira).
@@ -38,7 +38,7 @@ echo %$finaljwt%
 set "$taskName=My task"
 set "$taskDescription=Task description"
 set "$automationFramework=Cucumber"
-set "$projectKey=RANGE"
+set "$projectKey=TEST"
 set "$versionName=Unscheduled"
 
 :: Cycle info
@@ -50,13 +50,13 @@ set "$appendDateTimeInCycleName=false"
 set "$folderName=Windows"
 set "$createNewFolder=true"
 set "$appendDateTimeInFolderName=true"
-set "$assigneeUser=5fc727d5f8b0120069ecbaf3"
+set "$assigneeUser=60f4f41bf026ab00700ab52c"
 
 :: Fully-qualitified name of the test result file
 set "$resultPath=@\"C:/Users/spare/.jenkins/workspace/JavaFreeStyleGoogle/target/cucumber-reports/json-reports/CucumberTestReport.json""
 
 :: Set Mandatory
-set "$mandatoryFields={\"reporter\":{\"label\":\""Shuchita Pare"\",\"name\":\""Shuchita Pare"\",\"id\":\"5fc727d5f8b0120069ecbaf3\"}}"
+set "$mandatoryFields={\"reporter\":{\"label\":\""shuchita pare"\",\"name\":\""shuchita pare"\",\"id\":\"60f4f41bf026ab00700ab52c\"}}"
 
 :: =========================================
 ::  Create an automation task, run it, send test results to Zephyr.
