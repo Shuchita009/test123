@@ -56,7 +56,7 @@ set "$assigneeUser=60f4f41bf026ab00700ab52c"
 set "$resultPath=@\"C:/Users/spare/.jenkins/workspace/JavaFreeStyleGoogle/target/cucumber-reports/json-reports/CucumberTestReport.json""
 
 :: Set Mandatory
-set "$mandatoryFields={"issueType":"Test","project":"Test","reporter": {"label": "shuchita pare","name": "shuchita pare","id": "60f4f41bf026ab00700ab52c"}}"
+set "$mandatoryFields="{\"issueType\":\"Test\",\"project\":\"Test\",\"reporter\":{\"label\":\"shuchita pare\",\"name\":\"shuchita pare\",\"id\": \"60f4f41bf026ab00700ab52c\"}}"
 
 :: =========================================
 ::  Create an automation task, run it, send test results to Zephyr.
