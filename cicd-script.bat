@@ -35,28 +35,28 @@ echo %$finaljwt%
 :: =========================================
 
 :: Task info
-set "$taskName=My task"
-set "$taskDescription=Task description"
-set "$automationFramework=Cucumber"
+set "$taskName=Test"
+set "$taskDescription=Test"
+set "$automationFramework=CUCUMBER"
 set "$projectKey=TEST"
 set "$versionName=Unscheduled"
 
 :: Cycle info
 set "$cycleName=sample"
-set "$createNewCycle=true"
+set "$createNewCycle=false"
 set "$appendDateTimeInCycleName=false"
 
 :: Folder info
-set "$folderName=Windows"
-set "$createNewFolder=true"
-set "$appendDateTimeInFolderName=true"
+set "$folderName="""
+set "$createNewFolder=false"
+set "$appendDateTimeInFolderName=false"
 set "$assigneeUser=60f4f41bf026ab00700ab52c"
 
 :: Fully-qualitified name of the test result file
 set "$resultPath=@\"C:/Users/spare/.jenkins/workspace/JavaFreeStyleGoogle/target/cucumber-reports/json-reports/CucumberTestReport.json""
 
 :: Set Mandatory
-set "$mandatoryFields={\"reporter\":{\"label\":\""shuchita pare"\",\"name\":\""shuchita pare"\",\"id\":\""60f4f41bf026ab00700ab52c"\"}"
+set "$mandatoryFields={\"reporter\":{\"label\":\"shuchita pare\",\"name\":\"shuchita pare\",\"id\":\"60f4f41bf026ab00700ab52c\"}}"
 
 :: =========================================
 ::  Create an automation task, run it, send test results to Zephyr.
