@@ -56,7 +56,7 @@ set "$assigneeUser=60f4f41bf026ab00700ab52c"
 set "$resultPath=@\"C:/Users/spare/.jenkins/workspace/JavaFreeStyleGoogle/target/cucumber-reports/json-reports/CucumberTestReport.json""
 
 :: Set Mandatory
-set "$mandatoryFields={\"reporter\":{\"label\":\""reporter"\",\"id\":\"60f4f41bf026ab00700ab52c\"}}"
+set "$mandatoryFields={\"reporter\":{\"label\":\""reporter"\"}"
 
 :: =========================================
 ::  Create an automation task, run it, send test results to Zephyr.
