@@ -38,11 +38,11 @@ set "$taskName=Test"
 set "$taskDescription=Test"
 set "$automationFramework=CUCUMBER"
 set "$projectKey=TEST"
-set "$versionName=Unscheduled"
+set "$versionName=UNSCHEDULED"
 
 :: Cycle info
 set "$cycleName=sample"
-set "$createNewCycle=false"
+set "$createNewCycle=true"
 set "$appendDateTimeInCycleName=false"
 
 :: Folder info
