@@ -52,7 +52,7 @@ set "$appendDateTimeInFolderName=true"
 set "$assigneeUser=60f4f41bf026ab00700ab52c"
 
 :: Set Mandatory
-set "$mandatoryFields={"reporter":{"label":"shuchita pare","name":"shuchita pare","id":"60f4f41bf026ab00700ab52c"}}"
+set "$mandatoryFields={"reporter":{"label":"shuchitapare","name":"shuchitapare","id":"60f4f41bf026ab00700ab52c"}}"
 
 :: Fully-qualitified name of the test result file
 set "$resultPath=@\"C:/Users/spare/.jenkins/workspace/JavaFreeStyleGoogle/target/cucumber-reports/json-reports/CucumberTestReport.json"\"
