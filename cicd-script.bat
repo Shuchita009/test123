@@ -46,9 +46,9 @@ set "$createNewCycle=false"
 set "$appendDateTimeInCycleName=false"
 
 :: Folder info
-set "$folderName="""
-set "$createNewFolder=false"
-set "$appendDateTimeInFolderName=false"
+set "$folderName="Chrome""
+set "$createNewFolder=true"
+set "$appendDateTimeInFolderName=true"
 set "$assigneeUser=60f4f41bf026ab00700ab52c"
 
 :: Set Mandatory
