@@ -41,9 +41,9 @@ set "$projectKey=TEST"
 set "$versionName=UNSCHEDULED"
 
 :: Cycle info
-set "$cycleName=sample"
+set "$cycleName=Regression"
 set "$createNewCycle=true"
-set "$appendDateTimeInCycleName=false"
+set "$appendDateTimeInCycleName=true"
 
 :: Folder info
 set "$folderName="Chrome""
