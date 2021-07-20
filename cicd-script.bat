@@ -1,4 +1,3 @@
-
 :: =========================================
 ::  This .bat file demonstrates how to create or update an automation task in Zephyr for Jira Cloud, run this task, and publish test results to Zephyr.
 ::  Author: SmartBear Software
@@ -18,7 +17,7 @@ set "$zephyrBaseUrl=https://prod-api.zephyr4jiracloud.com/connect"
 set "$accessKey=ODhmNjZkNjQtZjM4NS0zYjM0LWI0OWYtMjU3ZTdlMjQyN2EzIDYwZjRmNDFiZjAyNmFiMDA3MDBhYjUyYyBVU0VSX0RFRkFVTFRfTkFNRQ"
 set "$secretKey=7-HKGkBijaA4yaMdW6bG40XRVC11FN1u5CiCNah46z4"
 :: Id of the user who will create the automation task. You can find it in Jira.
-set "$accountId=60f4f41bf026ab00700ab52c"
+set "$accountId=557058:60f4f41bf026ab00700ab52c"
 
 :: =========================================
 ::  Create a JSON Web Token  (required to access Zephyr for Jira).
@@ -52,17 +51,15 @@ set "$createNewFolder=false"
 set "$appendDateTimeInFolderName=false"
 set "$assigneeUser=60f4f41bf026ab00700ab52c"
 
+:: Set Mandatory
+set "$mandatoryFields={"reporter":{"label":"shuchita pare","name":"shuchita pare","id":"60f4f41bf026ab00700ab52c"}}"
+
 :: Fully-qualitified name of the test result file
 set "$resultPath=@\"C:/Users/spare/.jenkins/workspace/JavaFreeStyleGoogle/target/cucumber-reports/json-reports/CucumberTestReport.json""
-
-:: Set Mandatory
-set "$mandatoryFields={\"reporter\":{\"label\":\"shuchita pare\",\"name\":\"shuchita pare\",\"id\": \"60f4f41bf026ab00700ab52c\"}}"
 
 :: =========================================
 ::  Create an automation task, run it, send test results to Zephyr.
 ::  Keep this section as it is.
 :: =========================================
 echo "Creating and running an automation task ..."
-curl -v  POST  https://prod-vortexapi.zephyr4jiracloud.com/api/v1/automation/job/saveAndExecute  -H "Content-Type: multipart/form-data" -H "Content-Type: application/json" -H "accessKey: %$accessKey%" -H "jwt: %$finaljwt%" -F "jobName=%$taskName%" -F "jobDescription=%$taskDescription%" -F "automationFramework=%$automationFramework%" -F "projectKey=%$projectKey%" -F "versionName=%$versionName%" -F "cycleName=%$cycleName%" -F "createNewCycle=%$createNewCycle%" -F "appendDateTimeInCycleName=%$appendDateTimeInCycleName%" -F "folderName=%$folderName%" -F "createNewFolder=%$createNewFolder%" -F "appendDateTimeInFolderName=%$appendDateTimeInFolderName%" -F "assigneeUser=%$assigneeUser%" -F "file=%$resultPath%" -F "mandatoryFields=%$mandatoryFields%"
-
-
+curl -v -X POST https://prod-vortexapi.zephyr4jiracloud.com/api/v1/automation/job/saveAndExecute  -H "Content-Type: multipart/form-data" -H "Content-Type: application/json" -H "accessKey: %$accessKey%" -H "jwt: %$finaljwt%" -F "jobName=%$taskName%" -F "jobDescription=%$taskDescription%" -F "automationFramework=%$automationFramework%" -F "projectKey=%$projectKey%" -F "versionName=%$versionName%" -F "cycleName=%$cycleName%" -F "createNewCycle=%$createNewCycle%" -F "appendDateTimeInCycleName=%$appendDateTimeInCycleName%" -F "folderName=%$folderName%" -F "createNewFolder=%$createNewFolder%" -F "appendDateTimeInFolderName=%$appendDateTimeInFolderName%" -F "assigneeUser=%$assigneeUser%" -F "mandatoryFields=%$mandatoryFields%" -F "file=%$resultPath%"
