@@ -28,7 +28,7 @@ public class SearchPage {
 
     public void goTo(){
         this.driver.get("https://www.google.com/");
-        System.out.println("test1");
+        System.out.println("test2");
     }
 
 }
