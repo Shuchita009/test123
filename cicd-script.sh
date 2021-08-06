@@ -51,10 +51,10 @@ appendDateTimeInCycleName="true"
 folderName="RegressionTests"
 createNewFolder="true"
 appendDateTimeInFolderName="true"
-assigneeUser="557058:60f4f41bf026ab00700ab52c"
+assigneeUser="60f4f41bf026ab00700ab52c"
 
 #Set Mandatory
-mandatoryFields={"reporter":{"label":"shuchitapare","name":"shuchitapare","id":"557058:60f4f41bf026ab00700ab52c"}}
+mandatoryFields={"reporter":{"label":"shuchitapare","name":"shuchitapare","id":"60f4f41bf026ab00700ab52c"}}
 
 echo "curr dir: $pwd"
 # Name of the test result file
