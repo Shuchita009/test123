@@ -59,7 +59,7 @@ mandatoryFields={"reporter":{"label":"shuchitapare","name":"shuchitapare","id":"
 echo "curr dir: $pwd"
 # Name of the test result file
 resultPath="$/Users/jprakash/.jenkins/workspace/jira/target/cucumber-reports/json-reports/CucumberTestReport.json"
-
+echo resultPath
 #######################################################################
 #  Create an automation task, run it, send test results to Zephyr.
 #  Keep this section as it is.
